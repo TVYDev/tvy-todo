@@ -1,0 +1,33 @@
+.todo-input {
+  background-color: var(--color-primary-contrast);
+  border-radius: var(--default-border-radius);
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text-todo {
+  border: none;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 1rem;
+}
+
+.btn-save {
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: var(--default-border-radius);
+  border: none;
+  color: var(--color-accent);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0.2rem;
+  width: 4rem;
+}
+
+.btn-save:hover,
+.btn-save:focus {
+  background-color: var(--color-secondary);
+}

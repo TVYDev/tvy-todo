@@ -1,0 +1,62 @@
+.todo-item {
+  border-radius: var(--default-border-radius);
+  display: flex;
+  align-items: center;
+  min-height: 3rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  border: 0.2rem solid var(--color-primary-contrast);
+  background-color: var(--color-primary-contrast);
+}
+
+.task-desc {
+  padding: 1rem 1rem;
+  flex-grow: 1;
+  background-color: var(--color-primary);
+  font-weight: 300;
+  border-radius: var(--default-border-radius);
+}
+
+.btn-complete,
+.btn-delete {
+  align-self: stretch;
+  width: 4rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.btn-complete:hover,
+.btn-complete:focus {
+  color: var(--color-success);
+}
+
+.todo-item.completed .btn-complete:hover,
+.todo-item.completed .btn-complete:focus {
+  color: var(--color-primary-contrast);
+}
+
+.btn-delete:hover,
+.btn-delete:focus,
+.todo-item.completed .btn-delete:hover,
+.todo-item.completed .btn-delete:focus {
+  color: var(--color-danger);
+}
+
+.todo-item.completed {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.todo-item.completed .task-desc {
+  text-decoration: line-through;
+}
+
+.todo-item.completed .btn-complete,
+.todo-item.completed .btn-delete {
+  color: var(--color-primary);
+}
